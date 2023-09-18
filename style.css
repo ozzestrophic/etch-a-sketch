@@ -1,16 +1,16 @@
 #container {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: aqua;
+    height: 80vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto;
     /* align-items: stretch; */
     gap: 4px;
 }
 
 .little-box {
     border-width: 10px;
-    border: red;
-    flex: 1;
+    /* border: red; */
     aspect-ratio: 1 / 1;
-    height: auto;
-    background-color: black;
+    background-color: chocolate;
 }
