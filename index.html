@@ -20,6 +20,8 @@
                 <option value="64">64x64</option>
             </select>
             <button class="btn" onclick="reset()">Reset</button>
+            <button class="btn" onclick="registerBoxes()">B&W</button>
+            <button class="btn" onclick="rainbow()">Colors</button>
         </div>
         
         <div id="container">
@@ -62,16 +64,24 @@
     function registerBoxes() {
         const boxes = document.querySelectorAll(".little-box");
         boxes.forEach(box => box.addEventListener("mouseover", () => {
-        box.classList.add("active");
+        box.style.backgroundColor = "#000";
     }))
     }
     
     function reset () {
         const boxes = document.querySelectorAll(".little-box");
         boxes.forEach(box => box.classList.remove("active"));
+        boxes.forEach(box => box.style.backgroundColor = "#fff");
+
     }
     
-
+    function rainbow() {
+        const boxes = document.querySelectorAll(".little-box");
+        boxes.forEach(box => box.addEventListener("mouseover", () => {
+        box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
+        console.log(Math.random());
+    }))
+    }
 </script>
 
 
