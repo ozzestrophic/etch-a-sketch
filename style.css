@@ -1,15 +1,17 @@
 body {
-    background-color: rgb(50, 50, 50);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 49%, rgba(5,123,179,1) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+h1 {
+    color: white;
+}
 #whole {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     /* gap: 40px; */
-    height: 100vh;
+    height: 95vh;
 }
 .btn {
     height: 50px;
