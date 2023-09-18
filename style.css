@@ -1,16 +1,25 @@
+select {
+    margin: auto;
+    
+}
 #container {
     background-color: aqua;
-    height: 80vh;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: auto;
-    /* align-items: stretch; */
-    gap: 4px;
+    height: 50vh;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.row {
+    display: flex;
+    gap: 1px;
+
 }
 
 .little-box {
-    border-width: 10px;
-    /* border: red; */
     aspect-ratio: 1 / 1;
+    flex: 1;
     background-color: chocolate;
 }
